@@ -1,0 +1,16 @@
+
+{% extends 'base.html'%}{% block content %}
+
+
+<h4>Select the photo to mark attendance</h4>
+<form action ="/uploader" method = "post" enctype="multipart/form-data">
+    <input style="padding-left: 720px ;" type="file" name="file" accept=".jpg" required >
+    <br>
+    <button type="submit" style="background-color: lightblue;">Submit</button>
+</form>
+<br>
+<h4>What to see attendance</h4>
+<form action="/show" >
+<button type="submit" >view attendance</button>
+</form>
+{% endblock %}
