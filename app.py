@@ -16,7 +16,6 @@ path ='train'
 known_face_encodings= []
 known_face_names = []
 mylist = os.listdir(path)
-print(mylist)
 for cls in mylist:
     curimg = cv2.imread(f'{path}/{cls}')
     
@@ -107,5 +106,3 @@ def show():
     d = csv1.to_dict('split')
     
     return render_template('show.html',data = d['data'])
-if __name__ == '__main__':
-   app.run()
