@@ -14,8 +14,7 @@ colorama
 decorator        
 defusedxml        
 distlib           
-Django            
-dlib              
+Django                       
 docutils          
 entrypoints       
 executing         
